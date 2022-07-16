@@ -102,4 +102,53 @@ void insertionSort(int data[], int n)
     }
 }
 
+int binarySearch(int data[], int n, int s){
+    bubbleSort(data, n);
+    int lo=0, hi = n -1, mid;
+
+    while (lo <= hi){
+        mid = (lo + hi)/2;
+        if (s==data[mid])
+        {
+            return 1;
+        }
+        else if (data [mid] < s)
+        {
+            lo = mid + 1;
+        }
+        else{
+            hi = mid -1 ;
+        }
+    }
+    return 0;
+}
+
+float sq_root (int data[], int n, int sq){
+    int high = sq, low = 0, mid = 0;
+
+    while (low <= high)
+    {
+
+        mid = (low + high) / 2;
+        if(data[mid]*2==sq){
+            return data[mid];
+        }
+        else if(data[mid] *2 < sq){
+            high = mid;
+        }
+        else{
+            low  = mid;
+        }
+
+        // mid  = (low + high) /2;
+
+        // int test = data[mid] * 2;
+        // if(test < (sq + 0.005) || test > (sq - 0.005)){
+        //     return data[mid];
+        // }
+        // else if (test < ){}
+    }
+    
+
+}
 
