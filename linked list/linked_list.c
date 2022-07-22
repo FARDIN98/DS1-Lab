@@ -24,6 +24,7 @@ struct Node{
     struct Node *next;
 };
 
+// function for linked list traversal
 void linkedListTraversal(struct Node *ptr){
     while (ptr != NULL)
     {
