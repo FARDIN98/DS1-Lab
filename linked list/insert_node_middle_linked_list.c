@@ -43,15 +43,18 @@ void insert(struct Node *head, int position, int value){
             // insert your node here
             struct Node *newNode = (struct Node*)malloc(sizeof(struct Node));
             // newNode যেটা বানিয়েছি সেটার মধ্যে আমরা ফাংশনের প্যরামিটারের মধ্যে যে ভ্যালু দিয়েছি সেটা জমা রাখবো
+            // newNode->data = 155
             newNode->data = value;
             // newNode নেক্সট পয়েন্টার কে পয়েন্ট করবে টেম্প এর যে নেক্সট পয়েন্টার আছে সেটা
-            // 155 -> 20
+            // (newNode)155 -> 20(temp->next)
             newNode->next = temp->next;
-            // 15 -> 155
+            // (temp->next)15 -> 155(newNode)
             temp->next = newNode;
         }
+        // if position is invalid then the condition wont run
         temp = temp->next;
     }
+    // we just simply call the Print function to print the head
     Print(head);
 }
 
