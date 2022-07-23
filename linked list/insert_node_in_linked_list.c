@@ -1,5 +1,5 @@
 // insert a new node at the beginning in the linked list
-
+// insert a new node at the end
 #include<stdio.h>
 #include<stdlib.h>
 
