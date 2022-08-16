@@ -1,12 +1,11 @@
 #include<stdio.h>
+#include<stdlib.h>
 
-struct Node
-{
+struct Node{
     int data;
     struct Node *next;
 };
 typedef struct Node node;
-
 
 void menu();
 node* createNode();
@@ -100,6 +99,8 @@ int main()
     }
 
 }
+
+
 
 void menu()
 {
@@ -205,7 +206,7 @@ node* insert_nth(node *head, node *nn, int lSize, int pos)
     return head;
 }
 
-node* delete_head(node *head)
+node* delete_head(node *head, int key)
 {
     if(head == NULL)
     {

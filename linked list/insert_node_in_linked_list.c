@@ -34,11 +34,11 @@ int main(){
 
 
     // insert at beginning
-    // insertAtBeginning(head, 500);
+    insertAtBeginning(head, 500);
 
 
     // insert at end
-    insertAtTheEnd(head, 222);
+    // insertAtTheEnd(head, 222);
     return 0;
 }
 
